@@ -1,0 +1,455 @@
+.home {
+  position: relative;
+  z-index: 1111;
+}
+.hero_section {
+  padding-top: 200px;
+  height: 900px;
+  background: url(../../assets/images/hero-bg-img.png);
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 7.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.hero_section_titles {
+  width: 100%;
+  max-width: 413px;
+}
+.hero_section_title {
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 90px;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+.hero_section_subtitle {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 90px;
+}
+.explore_title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* greek_island */
+.greek_island {
+  margin-bottom: 120px;
+}
+.greek_island_title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 41px;
+  text-align: center;
+  color: #1a4d6d;
+  margin-bottom: 4.5rem;
+}
+
+.greek_island_cards {
+  columns: 3;
+  column-gap: 20px;
+  margin-bottom: 60px;
+}
+
+.greek_island_btn {
+  display: block;
+  margin: 0 auto;
+  padding: 1.375rem 3.25rem;
+  background: #3f8bbf;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  outline: none;
+
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* sailors */
+.sailors_wrapper {
+  background: #1a4d6d;
+  padding: 80px 0;
+  margin-bottom: 120px;
+}
+
+.sailors_title {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 125px;
+}
+
+/* yacht_owner */
+.yacht_owner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  border-top: 1px solid rgb(33, 33, 33, 0.2);
+  border-bottom: 1px solid rgb(33, 33, 33, 0.2);
+  padding: 93px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.yacht_owner_title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 41px;
+  color: #3f8bbf;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.yacht_owner_subtitle {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 23px;
+  color: #908e8e;
+  margin-bottom: 60px;
+}
+
+.yacht_owner_button {
+  padding: 35px 67px;
+  background: linear-gradient(
+    254.59deg,
+    #92b9d5 0%,
+    #3f8bbf 35.42%,
+    #1a4d6d 100%
+  );
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* discover */
+.discover {
+  width: 100%;
+  height: 826.77px;
+  background: url(../../assets/images/discover-img.png), #c4c4c4;
+  margin-bottom: 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.discover_title {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  margin-bottom: 35px;
+}
+.discover_subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  margin-bottom: 162px;
+}
+
+.discover_btn {
+  width: 240px;
+  height: 93px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+/* next_trip */
+.next_trip {
+  margin-bottom: 126px;
+}
+.next_trip_title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 41px;
+  text-align: center;
+  color: #3f8bbf;
+  margin-bottom: 92px;
+}
+
+.next_trip_cards {
+  margin-bottom: 71px;
+  display: flex;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.next_trip_btn {
+  display: flex;
+  width: 231px;
+  height: 56px;
+  background: #3f8bbf;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* explore_search */
+.explore_search {
+  margin: 0 78px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.explore_search_left {
+  flex: 1;
+  background: #ffffff;
+  box-shadow: 0px 2px 20px 1px rgba(33, 33, 33, 0.2);
+  border-radius: 12px;
+  padding: 29px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.divider {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.divider:not(:last-child) {
+  border-right: 1px solid rgb(144, 142, 142, 0.2);
+  padding-right: 1rem;
+}
+
+.divider input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid #3f8bbf;
+  outline: none;
+
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 23px;
+  color: #908e8e;
+  padding-bottom: 0.2rem;
+}
+
+.input_wrapper {
+  display: flex;
+  align-items: center;
+  color: #3f8bbf;
+  gap: 12px;
+  flex: 1;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  flex: 1;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #3f8bbf;
+  padding-bottom: 0.2rem;
+}
+
+.input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 23px;
+  color: #908e8e;
+  padding-bottom: 0.2rem;
+  padding-right: 2rem;
+}
+
+.select {
+  flex: 1;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid #3f8bbf;
+  outline: none;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 23px;
+  color: #908e8e;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.search_btn {
+  background: #1a4d6d;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  height: 100%;
+  padding: 0 66px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 23px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  .hero_section {
+    padding-bottom: 50px;
+    height: auto;
+  }
+
+  .explore_search {
+    margin: 0 auto;
+    width: 90%;
+    flex-direction: column;
+  }
+  .search_btn {
+    padding: 20px 36px;
+  }
+
+  .explore_search_left {
+    flex-direction: column;
+  }
+
+  .divider:not(:last-child) {
+    border-right: 0px;
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .greek_island_cards {
+    columns: 2;
+  }
+
+  .next_trip_cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero_section {
+    padding-top: 180px;
+  }
+
+  .hero_section_title {
+    font-size: 3.5rem;
+    line-height: 50px;
+    margin-bottom: 1.25rem;
+  }
+  .hero_section_subtitle {
+    font-size: 1.25rem;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .divider {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .greek_island_cards {
+    columns: 1;
+  }
+
+  .yacht_owner_button {
+    padding: 30px 40px;
+    font-size: 1rem;
+  }
+
+  .yacht_owner_subtitle {
+    margin-bottom: 40px;
+  }
+
+  .discover {
+    width: 100%;
+    height: 600px;
+  }
+  .discover_title {
+    font-size: 46px;
+    margin-bottom: 35px;
+  }
+  .discover_subtitle {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .discover_btn {
+    width: 240px;
+    height: 80px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}

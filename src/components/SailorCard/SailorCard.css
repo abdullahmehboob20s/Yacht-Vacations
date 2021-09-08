@@ -1,0 +1,71 @@
+.sailor_card {
+  width: 305px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 20px;
+  position: relative;
+  margin-top: 62px;
+}
+.sailor_img {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  border-radius: 12px;
+}
+
+.sailor_stars {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 20px;
+  color: #3f8bbf;
+  margin-bottom: 38px;
+}
+
+.sailor_card_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+.sailor_card_title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1a4d6d;
+  margin-bottom: 15px;
+}
+
+.sailor_card_subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #908e8e;
+}
+
+.sailor_card_date_title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #92b9d5;
+}
+
+.sailor_card_discription {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #212121;
+  opacity: 0.8;
+}
+
+@media (max-width: 580px) {
+  .sailor_card {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 20px;
+    position: relative;
+    margin-top: 62px;
+  }
+}
