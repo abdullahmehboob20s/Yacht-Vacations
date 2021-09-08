@@ -57,7 +57,7 @@ function Home() {
     },
     {
       title: "Rhodes",
-      image: card_img_8,
+      image: card_img_2,
     },
     {
       title: "Milos",
@@ -85,7 +85,7 @@ function Home() {
     },
     {
       title: "Zakynthos",
-      image: card_img_7,
+      image: card_img_3,
     },
     {
       title: "Santorini",
@@ -218,44 +218,44 @@ function Home() {
             <p className="sailors_title">
               Fellow sailors share their amazing experiences
             </p>
-            <div className="sailors_cards">
-              <Swiper
-                slidesPerView={4}
-                spaceBetween={30}
-                freeMode={true}
-                pagination={{
-                  clickable: true,
-                }}
-                className="mySwiper"
-                breakpoints={{
-                  1370: {
-                    slidesPerView: 4,
-                  },
-                  1000: {
-                    slidesPerView: 3,
-                  },
-                  760: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 120,
-                  },
-                  580: {
-                    slidesPerView: 2,
-                    spaceBetween: 120,
-                  },
-                  200: {
-                    slidesPerView: 1,
-                    spaceBetween: 70,
-                  },
-                }}
-              >
-                {new Array(8).fill("").map(() => (
-                  <SwiperSlide>
-                    <SailorCard />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
           </div>
+        </div>
+        <div className="sailors_cards">
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={10}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            className="mySwiper"
+            breakpoints={{
+              1370: {
+                slidesPerView: 4,
+              },
+              1000: {
+                slidesPerView: 3,
+              },
+              760: {
+                slidesPerView: 2.5,
+                spaceBetween: 120,
+              },
+              580: {
+                slidesPerView: 2,
+                spaceBetween: 120,
+              },
+              200: {
+                slidesPerView: 1,
+                spaceBetween: 70,
+              },
+            }}
+          >
+            {new Array(8).fill("").map(() => (
+              <SwiperSlide>
+                <SailorCard />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 
@@ -290,9 +290,9 @@ function Home() {
         </div>
       </div>
 
-      {/* <div className="container-wrapper">
+      <div className="container-wrapper">
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

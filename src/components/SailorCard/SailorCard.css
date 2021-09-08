@@ -61,7 +61,8 @@
 
 @media (max-width: 580px) {
   .sailor_card {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     background: #ffffff;
     border-radius: 12px;
     padding: 40px 20px;

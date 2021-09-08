@@ -83,3 +83,40 @@
   border-top: 1px solid rgb(144, 142, 142, 0.5);
   padding-top: 20px;
 }
+
+@media (max-width: 1300px) {
+  .footer_social_links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer_web_logo_title {
+    width: auto;
+    line-height: 18px;
+  }
+  .footer_links_wrapper {
+    /* border: 2px solid red; */
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer_social_links {
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+  .footer {
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+  }
+
+  .footer_box {
+    flex: 1;
+    flex-basis: 200px;
+  }
+
+  .footer_web_rights {
+    font-size: 1rem;
+    margin: 0 0px;
+  }
+}
