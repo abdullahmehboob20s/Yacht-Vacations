@@ -211,6 +211,7 @@ function Home() {
         </div>
       </div>
 
+      {/* sailors */}
       <div className="sailors_wrapper">
         <div className="container-wrapper">
           <div className="sailors">
@@ -258,6 +259,7 @@ function Home() {
         </div>
       </div>
 
+      {/* yacht_owner */}
       <div className="yacht_owner">
         <p className="yacht_owner_title">Are you a yacht owner?</p>
         <p className="yacht_owner_subtitle">
@@ -268,12 +270,14 @@ function Home() {
         </button>
       </div>
 
+      {/* discover */}
       <div className="discover">
         <p className="discover_title">Zakynthos</p>
         <p className="discover_subtitle">Greek Island</p>
         <div className="discover_btn">DISCOVER</div>
       </div>
 
+      {/* next_trip */}
       <div className="next_trip">
         <div className="container-wrapper">
           <p className="next_trip_title">Get inspiration for your next trip</p>
@@ -286,27 +290,11 @@ function Home() {
         </div>
       </div>
 
-      <div className="container-wrapper">
+      {/* <div className="container-wrapper">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
 
 export default Home;
-
-// {
-//   /* sailors */
-// }
-// {
-//   /* yacht_owner */
-// }
-// {
-//   /* discover */
-// }
-// {
-//   /* next_trip */
-// }
-// {
-//   /* footer */
-// }
