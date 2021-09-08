@@ -154,3 +154,10 @@
     display: block;
   }
 }
+
+@media (max-width: 500px) {
+  .nav_img_1 {
+    width: 120px;
+    /* border: 2px solid red; */
+  }
+}
