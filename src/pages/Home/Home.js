@@ -8,7 +8,6 @@ import card_img_4 from "assets/images/card-img-4.png";
 import card_img_5 from "assets/images/card-img-5.png";
 import card_img_6 from "assets/images/card-img-6.png";
 import card_img_7 from "assets/images/card-img-7.png";
-import card_img_8 from "assets/images/card-img-8.png";
 import card_img_9 from "assets/images/card-img-9.png";
 import card_img_10 from "assets/images/card-img-10.png";
 import card_img_11 from "assets/images/card-img-11.png";
