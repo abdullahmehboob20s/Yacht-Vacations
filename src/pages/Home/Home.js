@@ -20,8 +20,6 @@ import NextTripCard from "components/NextTripCard/NextTripCard";
 import { Link } from "react-router-dom";
 import Footer from "layouts/Footer/Footer";
 import Navbar from "layouts/Navbar/Navbar";
-import { RiCompassDiscoverLine } from "react-icons/ri";
-import { VscSearch } from "react-icons/vsc";
 import Discovery from "assets/images/Discovery.png";
 import Search from "assets/images/Search.png";
 
