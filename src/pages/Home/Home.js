@@ -8,6 +8,7 @@ import card_img_4 from "assets/images/card-img-4.png";
 import card_img_5 from "assets/images/card-img-5.png";
 import card_img_6 from "assets/images/card-img-6.png";
 import card_img_7 from "assets/images/card-img-7.png";
+import card_img_8 from "assets/images/card-img-8.png";
 import card_img_9 from "assets/images/card-img-9.png";
 import card_img_10 from "assets/images/card-img-10.png";
 import card_img_11 from "assets/images/card-img-11.png";
@@ -21,6 +22,8 @@ import Footer from "layouts/Footer/Footer";
 import Navbar from "layouts/Navbar/Navbar";
 import { RiCompassDiscoverLine } from "react-icons/ri";
 import { VscSearch } from "react-icons/vsc";
+import Discovery from "assets/images/Discovery.png";
+import Search from "assets/images/Search.png";
 
 function Home() {
   const [showCards, setshowCards] = React.useState(12);
@@ -31,45 +34,49 @@ function Home() {
       image: card_img_1,
     },
     {
-      title: "Crete",
-      image: card_img_2,
-    },
-    {
-      title: "Mykonos",
-      image: card_img_3,
-    },
-    {
       title: "Corfu",
       image: card_img_4,
-    },
-    {
-      title: "Naxos",
-      image: card_img_5,
-    },
-    {
-      title: "Paros",
-      image: card_img_6,
     },
     {
       title: "Zakynthos",
       image: card_img_7,
     },
     {
-      title: "Rhodes",
+      title: "Skiathos",
+      image: card_img_10,
+    },
+
+    {
+      title: "Crete",
       image: card_img_2,
     },
     {
-      title: "Milos",
-      image: card_img_9,
+      title: "Naxos",
+      image: card_img_5,
     },
     {
-      title: "Skiathos",
-      image: card_img_10,
+      title: "Rhodes",
+      image: card_img_8,
     },
     {
       title: "Lefkada",
       image: card_img_11,
     },
+    {
+      title: "Mykonos",
+      image: card_img_3,
+    },
+
+    {
+      title: "Paros",
+      image: card_img_6,
+    },
+
+    {
+      title: "Milos",
+      image: card_img_9,
+    },
+
     {
       title: "Patmos",
       image: card_img_12,
@@ -146,14 +153,10 @@ function Home() {
             <div className="explore_search_left">
               <div className="divider">
                 <div className="input_wrapper">
-                  <span className="icon">
-                    <RiCompassDiscoverLine />
-                  </span>
+                  <img src={Discovery} alt="" />
                   <div className="input">
                     <input type="text" placeholder="Sailing location" />
-                    <span className="icon">
-                      <VscSearch />
-                    </span>
+                    <img src={Search} alt="" />
                   </div>
                 </div>
               </div>

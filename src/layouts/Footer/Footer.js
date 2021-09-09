@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo_2 from "assets/images/logo-2.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
+import CurrencyDropdown from "components/Dropdowns/CurrencyDropdown/CurrencyDropdown";
 
 function Footer() {
   return (
@@ -165,6 +166,7 @@ function Footer() {
             </div>
           </div>
           <p className="footer_title">Currency</p>
+          <CurrencyDropdown />
         </div>
       </div>
 

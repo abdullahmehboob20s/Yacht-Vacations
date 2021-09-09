@@ -238,11 +238,14 @@
 
 /* explore_search */
 .explore_search {
-  margin: 0 78px;
+  /* margin: 0 78px; */
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   gap: 12px;
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .explore_search_left {
   flex: 1;
@@ -351,6 +354,36 @@
   line-height: 23px;
   color: #ffffff;
   cursor: pointer;
+}
+input[type="date"] {
+  position: relative;
+  padding-left: 25px;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 1;
+  background: url(../../assets//images/Calendar.png) no-repeat;
+  width: 14px;
+  height: 20px;
+}
+
+input[type="time"] {
+  position: relative;
+  padding-left: 28px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 1;
+  background: url(../../assets/images/Time-Circle.png) no-repeat;
+  width: 16px;
+  height: 20px;
 }
 
 @media (max-width: 1350px) {

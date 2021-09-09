@@ -157,7 +157,18 @@
 
 @media (max-width: 500px) {
   .nav_img_1 {
-    width: 120px;
-    /* border: 2px solid red; */
+    width: 110px;
+  }
+
+  .navbar {
+    height: 85px;
+  }
+
+  .navbar_wrapper {
+    top: 85px;
+  }
+
+  .black_screen {
+    top: 85px;
   }
 }
