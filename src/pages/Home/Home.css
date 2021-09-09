@@ -3,8 +3,10 @@
   z-index: 1111;
 }
 .hero_section {
-  padding-top: 200px;
-  height: 900px;
+  padding-top: 190px;
+  padding-bottom: 40px;
+  /* height: 900px; */
+  min-height: 100vh;
   background: url(../../assets/images/hero-bg-img.png);
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 7.5rem;
@@ -28,7 +30,8 @@
   font-size: 1.25rem;
   line-height: 23px;
   color: #ffffff;
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
+  margin-bottom: 40px;
 }
 .explore_title {
   font-weight: bold;
@@ -255,6 +258,12 @@
   padding: 29px 20px;
   display: flex;
   gap: 20px;
+}
+
+.divider_wrapper {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
 }
 
 .divider {
@@ -487,3 +496,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: #ffffff;
   }
 }
+
+/* @media (max-width: 350px) {
+  .divider_wrapper {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+} */

@@ -169,21 +169,27 @@ function Home() {
                 <input type="date" />
                 <input type="time" />
               </div>
-              <div className="divider">
-                <select className="select" name="Guest.." id="Guest..">
-                  <option value="Guest..">Guest..</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-              <div className="divider">
-                <select className="select" name="Boat Type.." id="Boat Type..">
-                  <option value="Boat Type..">Boat Type..</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
+              <div className="divider_wrapper">
+                <div className="divider">
+                  <select className="select" name="Guest.." id="Guest..">
+                    <option value="Guest..">Guest..</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
+                <div className="divider">
+                  <select
+                    className="select"
+                    name="Boat Type.."
+                    id="Boat Type.."
+                  >
+                    <option value="Boat Type..">Boat Type..</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div className="explore_search_right">
