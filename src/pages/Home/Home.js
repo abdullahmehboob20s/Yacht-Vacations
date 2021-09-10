@@ -33,7 +33,7 @@ import next_trip_card_img_3 from "assets/images/next_trip_card_img_3.png";
 import boat from "assets/images/boat.png";
 import users_icon from "assets/images/users-icon.png";
 import Calendar from "assets/images/Calendar.png";
-// import Time_Circle from "assets/images/Time-Circle.png";
+import Time_Circle from "assets/images/Time-Circle.png";
 
 function Home() {
   const [showCards, setshowCards] = React.useState(12);
@@ -225,7 +225,7 @@ function Home() {
                   <input ref={calendarRef} type="date" />
                 </div>
                 <div className="date-picker">
-                  <img src={users_icon} alt="" />
+                  <img src={Time_Circle} alt="" />
                   <input type="time" />
                 </div>
               </div>
