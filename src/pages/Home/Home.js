@@ -22,6 +22,14 @@ import Footer from "layouts/Footer/Footer";
 import Navbar from "layouts/Navbar/Navbar";
 import Discovery from "assets/images/Discovery.png";
 import Search from "assets/images/Search.png";
+import sailor_img_0 from "assets/images/sailor-img-0.png";
+import sailor_img_1 from "assets/images/sailor-img-1.png";
+import sailor_img_2 from "assets/images/sailor-img-2.png";
+import sailor_img_3 from "assets/images/sailor-img-3.png";
+import sailor_img_4 from "assets/images/sailor-img-4.png";
+import next_trip_card_img_1 from "assets/images/next_trip_card_img_1.png";
+import next_trip_card_img_2 from "assets/images/next_trip_card_img_2.png";
+import next_trip_card_img_3 from "assets/images/next_trip_card_img_3.png";
 
 function Home() {
   const [showCards, setshowCards] = React.useState(12);
@@ -114,6 +122,47 @@ function Home() {
     {
       title: "Mykonos",
       image: card_img_3,
+    },
+  ];
+  const sailors = [
+    {
+      name: "Alexander Kriss",
+      disc: "The Experience is amazing! I could get to my booking on time without any mistakes. Gonna book again over and over. EXCELLENT JOB",
+      img: sailor_img_0,
+    },
+    {
+      name: "Jenifer Lorans",
+      disc: "The Experience is amazing! I could get to my booking on time without any mistakes. Gonna book again over and over. EXCELLENT JOB",
+      img: sailor_img_1,
+    },
+    {
+      name: "Julia Rodregez",
+      disc: "The Experience is amazing! I could get to my booking on time without any mistakes. Gonna book again over and over. EXCELLENT JOB",
+      img: sailor_img_2,
+    },
+    {
+      name: "Adam Jackson",
+      disc: "The Experience is amazing! I could get to my booking on time without any mistakes. Gonna book again over and over. EXCELLENT JOB",
+      img: sailor_img_3,
+    },
+    {
+      name: "Sara Conor",
+      disc: "The Experience is amazing! I could get to my booking on time without any mistakes. Gonna book again over and over. EXCELLENT JOB",
+      img: sailor_img_4,
+    },
+  ];
+  const nextTrip = [
+    {
+      img: next_trip_card_img_1,
+      title: "How to pick your best choice with ideal price for your needs",
+    },
+    {
+      img: next_trip_card_img_2,
+      title: "Schedule your lovely vacation by choosing precise date",
+    },
+    {
+      img: next_trip_card_img_3,
+      title: "Are you on hurry? get a book intraday with multiple options",
     },
   ];
 
@@ -236,6 +285,9 @@ function Home() {
             }}
             className="mySwiper"
             breakpoints={{
+              1500: {
+                slidesPerView: 5,
+              },
               1370: {
                 slidesPerView: 4,
               },
@@ -256,9 +308,9 @@ function Home() {
               },
             }}
           >
-            {new Array(8).fill("").map(() => (
+            {sailors.map((item, index) => (
               <SwiperSlide>
-                <SailorCard />
+                <SailorCard data={item} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -288,9 +340,9 @@ function Home() {
         <div className="container-wrapper">
           <p className="next_trip_title">Get inspiration for your next trip</p>
           <div className="next_trip_cards">
-            <NextTripCard />
-            <NextTripCard />
-            <NextTripCard />
+            {nextTrip.map((item, index) => (
+              <NextTripCard data={item} />
+            ))}
           </div>
           <Link className="next_trip_btn">View More Blogs</Link>
         </div>

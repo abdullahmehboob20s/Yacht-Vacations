@@ -1,9 +1,16 @@
 .image_card {
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .image_card img {
   width: 100%;
+  transition: all 0.2s ease;
+}
+
+.image_card:hover img {
+  transform: scale(1.1);
 }
 .image_card_title {
   position: absolute;
@@ -15,10 +22,10 @@
   background: #ffffff;
   opacity: 0.8;
   padding-left: 20px;
-
   font-weight: bold;
   font-size: 1.25rem;
   color: #212121;
+  z-index: 10000000000;
 }
 
 @media (max-width: 1000px) {
