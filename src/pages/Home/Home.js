@@ -30,10 +30,15 @@ import sailor_img_4 from "assets/images/sailor-img-4.png";
 import next_trip_card_img_1 from "assets/images/next_trip_card_img_1.png";
 import next_trip_card_img_2 from "assets/images/next_trip_card_img_2.png";
 import next_trip_card_img_3 from "assets/images/next_trip_card_img_3.png";
+import boat from "assets/images/boat.png";
+import users_icon from "assets/images/users-icon.png";
+import Calendar from "assets/images/Calendar.png";
+// import Time_Circle from "assets/images/Time-Circle.png";
 
 function Home() {
   const [showCards, setshowCards] = React.useState(12);
   const [hideBtn, sethideBtn] = React.useState(false);
+  const calendarRef = React.useRef();
   const imageGalleryData = [
     {
       title: "Santorini",
@@ -215,29 +220,41 @@ function Home() {
                   <option value="mercedes">Mercedes</option>
                   <option value="audi">Audi</option>
                 </select>
-                <input type="date" />
-                <input type="time" />
+                <div className="date-picker">
+                  <img src={Calendar} alt="" />
+                  <input ref={calendarRef} type="date" />
+                </div>
+                <div className="date-picker">
+                  <img src={users_icon} alt="" />
+                  <input type="time" />
+                </div>
               </div>
               <div className="divider_wrapper">
                 <div className="divider">
-                  <select className="select" name="Guest.." id="Guest..">
-                    <option value="Guest..">Guest..</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
+                  <div className="row align-center gap-10">
+                    <img className="boat_input_icon" src={users_icon} alt="" />
+                    <input
+                      type="number"
+                      className="input"
+                      placeholder="Guest.."
+                    />
+                  </div>
                 </div>
                 <div className="divider">
-                  <select
-                    className="select"
-                    name="Boat Type.."
-                    id="Boat Type.."
-                  >
-                    <option value="Boat Type..">Boat Type..</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
+                  <div className="row align-center gap-10">
+                    <img className="boat_input_icon" src={boat} alt="" />
+
+                    <select
+                      className="select"
+                      name="Boat Type.."
+                      id="Boat Type.."
+                    >
+                      <option value="Boat Type..">Boat Type..</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
