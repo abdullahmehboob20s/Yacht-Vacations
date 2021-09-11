@@ -1,10 +1,10 @@
 .currency_dropdown {
-  /* border: 2px solid red; */
+  /* width: 170.61px; */
+  /* width: fit-content; */
+  width: 100%;
   position: relative;
-  width: fit-content;
 }
 .currency_dropdown_btn {
-  width: 170.61px;
   height: 38px;
   background: #ffffff;
   border: 1px solid rgba(144, 142, 142, 0.5);
@@ -66,4 +66,10 @@
   font-size: 14px;
   line-height: 16px;
   color: #908e8e;
+}
+
+@media (max-width: 1350px) {
+  .currency_dropdown {
+    width: 170.61px;
+  }
 }

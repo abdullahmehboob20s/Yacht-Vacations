@@ -492,6 +492,7 @@ input[type="number"] {
 
 .date-picker {
   display: flex;
+  flex: 1;
 }
 
 .date-picker img {
@@ -542,6 +543,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   height: 20px; */
 }
 
+.input_type_number {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid red; */
+}
+.input_type_number .input {
+  max-width: 100%;
+  flex: 1;
+  /* border: 2px solid red; */
+}
+
 @media (max-width: 1350px) {
   .hero_section {
     padding-bottom: 50px;
@@ -586,22 +600,25 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .hero_section {
-    padding-top: 180px;
+    padding-top: 150px;
+    padding-bottom: 30px;
   }
-
   .hero_section_title {
-    font-size: 3.5rem;
-    line-height: 50px;
-    margin-bottom: 1.25rem;
+    font-size: 4.5rem;
+    line-height: 70px;
   }
   .hero_section_subtitle {
-    font-size: 1.25rem;
-    line-height: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
+}
 
+@media (max-width: 600px) {
+  .hero_section_title {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
   .divider {
     gap: 1.5rem;
     -webkit-box-orient: vertical;
@@ -612,6 +629,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 500px) {
+  .hero_section {
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero_section_title {
+    font-size: 3.5rem;
+    line-height: 50px;
+  }
+  .hero_section_subtitle {
+    margin-bottom: 20px;
+  }
+
   .greek_island_cards {
     -webkit-columns: 1;
     -moz-columns: 1;
@@ -674,3 +703,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     flex-direction: column;
   }
 } */
+
+@media (max-width: 400px) {
+  .hero_section {
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero_section_title {
+    font-size: 3.3rem;
+    line-height: 48px;
+  }
+  .hero_section_subtitle {
+    margin-bottom: 15px;
+  }
+}

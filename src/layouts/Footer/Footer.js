@@ -4,6 +4,8 @@ import logo_2 from "assets/images/logo-2.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
 import CurrencyDropdown from "components/Dropdowns/CurrencyDropdown/CurrencyDropdown";
+import apple_icon from "assets/images/apple.png";
+import playstore from "assets/images/playstore.png";
 
 function Footer() {
   return (
@@ -124,33 +126,35 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="footer_box">
-          <p className="footer_title">Main Pages</p>
-          <ul>
-            <li>
-              <Link>Home</Link>
-            </li>
-            <li>
-              <Link>Listing</Link>
-            </li>
-            <li>
-              <Link>Special Offers</Link>
-            </li>
-            <li>
-              <Link>Blogs</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="footer_box">
-          <p className="footer_title">Support</p>
-          <ul>
-            <li>
-              <Link>Contact us</Link>
-            </li>
-            <li>
-              <Link>Terms & Services </Link>
-            </li>
-          </ul>
+        <div className="main_pages_support">
+          <div className="footer_box">
+            <p className="footer_title">Main Pages</p>
+            <ul>
+              <li>
+                <Link>Home</Link>
+              </li>
+              <li>
+                <Link>Listing</Link>
+              </li>
+              <li>
+                <Link>Special Offers</Link>
+              </li>
+              <li>
+                <Link>Blogs</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer_box">
+            <p className="footer_title">Support</p>
+            <ul>
+              <li>
+                <Link>Contact us</Link>
+              </li>
+              <li>
+                <Link>Terms & Services </Link>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="footer_box">
           <p className="footer_title">Follow Us</p>
@@ -165,12 +169,23 @@ function Footer() {
               <FaInstagram />
             </div>
           </div>
-          <p className="footer_title">Currency</p>
-          <CurrencyDropdown />
+          <div>
+            <p className="footer_title">Currency</p>
+            <CurrencyDropdown />
+          </div>
+          <div className="get_app_btns">
+            <Link className="get_app_btn">
+              <img src={apple_icon} alt="" /> <p>App Store</p>{" "}
+            </Link>
+            <Link className="get_app_btn">
+              <img src={playstore} alt="" /> <p>Google Play</p>{" "}
+            </Link>
+          </div>
+          <p className="footer_web_rights">@CYAN2021 - All Right Reserved </p>
         </div>
       </div>
 
-      <p className="footer_web_rights">All Right Reserved - CYAN@2021</p>
+      {/* <p className="footer_web_rights">All Right Reserved - CYAN@2021</p> */}
     </div>
   );
 }

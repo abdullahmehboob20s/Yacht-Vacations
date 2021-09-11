@@ -1,10 +1,15 @@
 .footer_wrapper {
-  margin-bottom: 118px;
+  margin-bottom: 50px;
+  /* border: 2px solid red; */
 }
 .footer {
   display: flex;
   gap: 40px;
   padding: 60px 0;
+}
+.main_pages_support {
+  display: flex;
+  gap: 30px;
 }
 .footer ul li {
   list-style: none;
@@ -73,15 +78,63 @@
 }
 
 .footer_web_rights {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #908e8e;
-  margin: 0 170px;
-  border-top: 1px solid rgb(144, 142, 142, 0.5);
-  padding-top: 20px;
+}
+
+.get_app_btns {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 60px;
+  /* flex-wrap: wrap; */
+  margin-bottom: 25px;
+  justify-content: flex-start;
+}
+
+.get_app_btn {
+  border: 2px solid red;
+  width: 150px;
+  /* flex-basis: 135px; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #3f8bbf;
+  border: 1px solid #1a4d6d;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 11px 12px;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+}
+
+.get_app_btn:nth-child(2) {
+  /* border: 2px solid red; */
+  width: 145px;
+}
+
+.get_app_btn:nth-child(2) img {
+  width: 24.33px;
+  height: 26px;
+}
+
+@media (max-width: 1350px) {
+  .get_app_btns {
+    flex-wrap: wrap;
+  }
+
+  .get_app_btn {
+    max-width: 141px;
+    flex: unset;
+  }
+  .get_app_btn:nth-child(2) {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -100,7 +153,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
   .footer_social_links {
     flex-wrap: wrap;
     justify-content: unset;
@@ -118,5 +171,10 @@
   .footer_web_rights {
     font-size: 1rem;
     margin: 0 0px;
+  }
+
+  .get_app_btn {
+    max-width: 150px;
+    /* flex: 1; */
   }
 }

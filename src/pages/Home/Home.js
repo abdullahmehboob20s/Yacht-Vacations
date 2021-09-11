@@ -231,7 +231,7 @@ function Home() {
               </div>
               <div className="divider_wrapper">
                 <div className="divider">
-                  <div className="row align-center gap-10">
+                  <div className="input_type_number">
                     <img className="boat_input_icon" src={users_icon} alt="" />
                     <input
                       type="number"
@@ -241,7 +241,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="divider">
-                  <div className="row align-center gap-10">
+                  <div className="input_type_number">
                     <img className="boat_input_icon" src={boat} alt="" />
 
                     <select
